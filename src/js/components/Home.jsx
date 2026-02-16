@@ -1,6 +1,5 @@
 import React from "react";
-import Card from "../components/Card";
-
+import Footer from "../components/Footer";
 
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
@@ -9,8 +8,8 @@ import rigoImage from "../../img/rigo-baby.jpg";
 const Home = () => {
 	return (
 		<div className="text-center">
-			<h1 className="mt-5">Hello Rigo!</h1>
-	
+            
+			<Footer/>
 		</div>
 	);
 };
