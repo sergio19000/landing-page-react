@@ -1,9 +1,18 @@
 import React from "react";
-import Footer from "../components/Footer";
+import NavBar from "./NavBar";
+import Jumbotron from './Jumbotron';
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
 
+function Home() {
+    return (
+        <div>
+            <NavBar/>
+            <main className="container mt-4">
+                <Jumbotron/>
+            </main>
+        </div>
+    );
+}
 /*
 const Home = () => {
 	return (
