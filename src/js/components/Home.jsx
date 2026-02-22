@@ -1,5 +1,8 @@
 import React from "react";
-import Card from "../components/Card";
+import NavBar from "./NavBar";
+import Jumbotron from './Jumbotron';
+import Footer from "./Footer";
+import Card from "./Card";
 
 
 //include images into your bundle
@@ -61,6 +64,20 @@ const Home = () => {
     </div>
   );
 };
+
+
+function Home() {
+    return (
+        <div>
+            <NavBar/>
+            <main className="container mt-4">
+                <Jumbotron/>
+				<Card/>
+            </main>
+			<Footer/>
+        </div>
+    );
+}
 
 export default Home;
 
