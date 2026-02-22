@@ -1,15 +1,15 @@
 import React from "react";
 import "./Card.css";
 
-const Card = (props) => {
+const Card = ({ title, text, image, buttonText }) => {
   return (
     <div className="d-flex justify-content-center mt-4 ps-4 pe-4">
       <div className="card w-100 h-100">
-        <img src={props.image} className="card-img-top" />
+        <img src={image} className="card-img-top" alt={title} />
         <div className="card-body text-center">
-          <h5 className="card-title">{props.title}</h5>
-          <p className="card-text">{props.text}</p>
-          <button className="btn btn-primary">{props.buttonText}</button>
+          <h5 className="card-title">{title}</h5>
+          <p className="card-text">{text}</p>
+          <button className="btn btn-primary">{buttonText}</button>
         </div>
       </div>
     </div>
