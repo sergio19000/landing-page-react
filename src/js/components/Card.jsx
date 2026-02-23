@@ -1,5 +1,5 @@
 import React from 'react'
-import Cardprops from './Cardprops'
+import "./Card.css";
 
 const Card = ({ title, text, image, buttonText }) => {
   return (
@@ -13,7 +13,7 @@ const Card = ({ title, text, image, buttonText }) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Card;
